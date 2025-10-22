@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background: radial-gradient(circle at 30% 30%, #1a1a1a, #0d0d0f 80%);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.app-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  width: 360px;
+  transition: transform 0.3s ease;
+}
+
+.app-container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+
+  /* Gradient text */
+  background: linear-gradient(90deg, #ff6bcb, #857dff, #4deeea);
+  background-clip: text;              
+  -webkit-background-clip: text;     
+  color: transparent;                 
+  -webkit-text-fill-color: transparent;
+}
+
+.app-message {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app-circle {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 2rem;
+}
+
+.circle-shape {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+.app-counter-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-counter-box p {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.btn-start {
+  background: linear-gradient(135deg, #ff6bcb, #857dff, #4deeea);
+  background-size: 200% 200%;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(133, 125, 255, 0.4);
+}
+
+.btn-start:hover {
+  background-position: right center;
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(133, 125, 255, 0.6);
+}
+
+.btn-start:active {
+  transform: scale(0.95);
+}
