@@ -12,12 +12,12 @@ This project is a lightweight web implementation of that method.
 ---
 
 ## 📁 Repository Structure
-
+```
 ├── index.html ← main HTML file
 ├── style.css ← CSS styles for layout & visuals
 ├── app.js ← JavaScript logic driving the timer
 ├── bell.wav ← audio alert when timer ends
-
+```
 
 ---
 
